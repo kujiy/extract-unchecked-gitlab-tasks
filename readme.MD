@@ -5,7 +5,7 @@ It's hard to recognize unchecked checkboxes in Gitlab issues when they have lots
 In that case, let's make an new issue with only unchecked tasks!
 
 
-# Make a bookmark by yourself with a code below
+# Make a bookmark by yourself with this code below
 
 ```
 javascript:(function(){var out;$(".task-list-item-checkbox:checkbox:not(:checked)").parent().each(function(){var item="\n - [ ] "+$(this).html().replace(/<.*?>/g,'');out+=item;});document.write('<textarea cols=\'100\' rows=\'100\' selected=\'selected\'>'+out+'</textarea>');$('textarea').select();})();
