@@ -6,7 +6,7 @@ It's hard to recognize unchecked checkboxes in Gitlab issues when an issue has l
 In that case, let's make an new issue with only unchecked tasks!
 
 # What will this tool give you
-Extrack only unchecked tasks in Markdown.
+Extract only unchecked tasks in Markdown.
 
 ![](https://raw.githubusercontent.com/kujiy/extract-unchecked-gitlab-tasks/master/0318-05.png)
 
