@@ -5,9 +5,10 @@ It's hard to recognize unchecked checkboxes in Gitlab issues when an issue has l
 
 In that case, let's make an new issue with only unchecked tasks!
 
-# What does this give you
+# What will this tool give you
 Extrack only unchecked tasks in Markdown.
-![](https://raw.githubusercontent.com/kujiy/how-to-change-sublime-minimap-color/master/0318-05.png)
+
+![](https://raw.githubusercontent.com/kujiy/extract-unchecked-gitlab-tasks/master/0318-05.png)
 
 
 
@@ -18,7 +19,7 @@ javascript:(function(){var out;$(".task-list-item-checkbox:checkbox:not(:checked
 ```
 
 
-# with line breaks
+# With line breaks (to fix by yourself)
 ```javascript
 var out;
 $(".task-list-item-checkbox:checkbox:not(:checked)").parent().each( function() {
@@ -31,5 +32,6 @@ $(".task-list-item-checkbox:checkbox:not(:checked)").parent().each( function() {
 document.write('<textarea cols=\'100\' rows=\'100\' selected=\'selected\'>' + out + '</textarea>');
 $('textarea').select();
 ```
-
+# Welcome for your help
+Please make this useful!
 
