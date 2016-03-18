@@ -35,6 +35,6 @@ $(".task-list-item-checkbox:checkbox:not(:checked)").parent().each( function() {
 document.write('<textarea cols=\'100\' rows=\'100\' selected=\'selected\'>' + out + '</textarea>');
 $('textarea').select();
 ```
-# Welcome for your help
-Please make this useful!
+# Feedback is welcome
+And please make this more useful!
 
