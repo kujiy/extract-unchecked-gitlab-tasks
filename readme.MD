@@ -8,7 +8,7 @@ In that case, let's make an new issue with only unchecked tasks!
 # Make a bookmark by yourself with a code below
 
 ```
-javascript:(function(){var out;$(".task-list-item-checkbox:checkbox:not(:checked)").parent().each(function(){var item="\n - [ ] "+$(this).html().replace(/<.*?>/g,'');out+=item;});document.write('<textarea cols=\'100\' rows=\'100\' selected=\'selected\'>'+out+'</textarea>');$('textarea').select();})();
+javascript:(function(){var out="";$(".task-list-item-checkbox:checkbox:not(:checked)").parent().each(function(){var check=$(this).clone();check.find("*").remove();var item="";$(this).parents("li.task-list-item").each(function(){item+="    ";});item+="- [ ] "+check.html().replace(/^\s+|\s+$/g,'')+"\n";if(item!=""){out+=item;}});document.write('<textarea cols="100" rows="100" selected="selected">'+out+'</textarea>');$('textarea').select();})();
 ```
 
 # What will this tool give you
@@ -23,18 +23,26 @@ Extract only unchecked tasks in Markdown.
 
 
 # With line breaks (to fix by yourself)
-```javascript
-var out;
+```js
+var out = "";
 $(".task-list-item-checkbox:checkbox:not(:checked)").parent().each( function() {
-    var item = "\n - [ ] " + $(this).html().replace( /<.*?>/g, '' );
+    var check = $(this).clone();
+    check.find("*").remove();
+    var item = "";
+    $(this).parents("li.task-list-item").each(function (){
+        item += "    ";
+    });
+    item += "- [ ] " + check.html().replace( /^\s+|\s+$/g, '' ) + "\n";
     if(item != "") {
        out += item;
     }
 });
 /* console.log(out); */
-document.write('<textarea cols=\'100\' rows=\'100\' selected=\'selected\'>' + out + '</textarea>');
+document.write('<textarea cols="100" rows="100" selected="selected">' + out + '</textarea>');
 $('textarea').select();
 ```
+
+
 # Feedback is welcome
 And please make this more useful!
 
