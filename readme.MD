@@ -1,7 +1,7 @@
 
 # Extract unchecked tasks in Gitlab
 
-It's hard to recognize unchecked checkboxes in Gitlab issues when an issue has lots of comments and checkboxes.
+It's hard to recognize unchecked checkboxes in Gitlab issues when they have lots of comments and checkboxes.  
 In that case, let's make an new issue with only unchecked tasks!
 
 
