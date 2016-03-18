@@ -11,6 +11,8 @@ Extract only unchecked tasks in Markdown.
 ![](https://raw.githubusercontent.com/kujiy/extract-unchecked-gitlab-tasks/master/0318-05.png)
 
 
+![](https://raw.githubusercontent.com/kujiy/extract-unchecked-gitlab-tasks/master/0318-08.png)
+
 
 # Make a bookmark by yourself with a code below
 
