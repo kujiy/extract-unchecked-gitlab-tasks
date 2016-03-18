@@ -1,0 +1,4 @@
+
+<h1>Drag this link into your bookmark bar</h1>
+
+<a id="codeOut" href="javascript:(function(){var out;$(&quot;.task-list-item-checkbox:checkbox:not(:checked)&quot;).parent().each(function(){var item=&quot;\n - [ ] &quot;+$(this).html().replace(/<.*?>/g,'');out+=item;});document.write('<textarea cols=\'100\' rows=\'100\' selected=\'selected\'>'+out+'</textarea>');$('textarea').select();})();">Extract unchecked items</a>
